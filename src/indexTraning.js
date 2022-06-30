@@ -1,5 +1,5 @@
 export function Traning () {
-
+   return  console.log(1)
 }
 
 const obj = {
@@ -33,3 +33,5 @@ let newObj = {
 let copyNewObj = {...newObj,technologies:[...newObj.technologies]}
 console.log(copyNewObj === newObj) // false
 console.log(newObj.technologies === copyNewObj.technologies) // false
+
+console.log(true && true && "Igor")
