@@ -177,19 +177,9 @@ console.log(addFriends(students))
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-const addFriends2 = (students) => {
- return students.map(st => ({...st,friends:students.map(el => st.name !== el.name && el.name).filter(el => el)}))
-}
+const addFriends2 = (students) => students.map(st => ({...st,friends:students.map(el => st.name !== el.name && el.name).filter(el => el)}))
+
 console.log(addFriends2(students));
-
-////////////////////////////////////////////////////////////////////////////////////
-
-const addFriends3 = (students) => {
-    let copyStudents = students.reduce()
-
-    return copyStudents
-}
-console.log(addFriends3(students));
 
 ////////////////////////////////////////////////////////////////////////////////////
 
