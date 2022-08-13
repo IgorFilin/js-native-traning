@@ -40,4 +40,17 @@ const students = [
 
 let deepCopyStudents = students.map(el => ({...el}))
 let bestStudent = deepCopyStudents.reduce((a, b) => a > b.scores ? a : b.scores,0)
-console.log(bestStudent)
+// console.log(bestStudent)
+
+function sumFirstNumbers(N) {
+    //...здесь пишем код.
+    // В return стоит "заглушка", чтоб typescript не ругался
+    let result = 0
+    while (N) {
+        result += N % 10;
+        N = Math.floor(N / 10);
+    }
+    return N
+}
+
+console.log(sumFirstNumbers(4))
